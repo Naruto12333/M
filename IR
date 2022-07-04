@@ -1,0 +1,28 @@
+
+void setup()
+{
+    pinMode(13,OUTPUT);
+    pinMode(2,INPUT);
+    Serial.begin(9600);
+
+}
+void loop()
+{
+  if(!digitalRead(2))
+  {
+      digitalWrite(13,HIGH);
+      Serial.println("LED IS ON");
+ 
+  
+  }
+  else
+  {
+    digitalWrite(13,LOW);
+    Serial.println("LED IS OFF");
+  
+  
+  }
+
+}  
+  
+  
